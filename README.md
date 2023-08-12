@@ -34,3 +34,5 @@ $npm install react-router-dom
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
+
+6. Recordar detener el servidor (si ya esta corriendo) con ctrl + c, y volver a iniciarlo con npm run dev, para que tome los estilos de tailwind.
