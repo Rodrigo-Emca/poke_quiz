@@ -3,107 +3,121 @@ import { Link } from 'react-router-dom'
 import { imgs , categories } from '../data'
 
 const [ 
-    imgCiencia, 
-    imgDeportes, 
-    imgFilosofia, 
-    imgGeografia, 
-    imgHistoria,
-    imgLiteratura,
-    imgTecnologia,
+    imgKanto, 
+    imgJohto, 
+    imgHohen, 
+    imgSinnoh, 
+    imgTeselia,
+    imgKalos,
+    imgAlola,
+    imgGalar,
 ] = imgs
 
 const CategoryList = () => {
     return (
         <div className='flex flex-wrap flex-row justify-center gap-4 mt-10'>
 
-            {/* Category Link Ciencias */}
+            {/* Category Link Kanto */}
             <Link 
-                to={`/category/${categories.ciencia}`} 
+                to={`/category/${categories.kanto}`} 
                 className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105'>
                 <div className='p-5 flex justify-center items-center'>
-                    <img src={imgCiencia} alt={`Categoria ${categories.ciencia}`} className='w-36'/>
+                    <img src={imgKanto} alt={`Categoria ${categories.kanto}`} className='scale-125'/>
                 </div>
 
-                <h1 className="text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
-                    {categories.ciencia}
+                <h1 className="text-center text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
+                    {categories.kanto}
                 </h1>
             </Link>
 
-            {/* Category Link Deportes */}
+            {/* Category Link Johto */}
             <Link 
-                to={`/category/${categories.deportes}`} 
-                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105'>
+                to={`/category/${categories.johto}`} 
+                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-pink-500 to-red-500 transition-all hover:scale-105'>
                 <div className='p-5 flex justify-center items-center'>
-                    <img src={imgDeportes} alt={`Categoria ${categories.deportes}`} className='w-36'/>
+                    <img src={imgJohto} alt={`Categoria ${categories.johto}`} className='scale-125'/>
                 </div>
 
-                <h1 className="text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
-                    {categories.deportes}
+                <h1 className="text-center text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
+                    {categories.johto}
                 </h1>
             </Link>
 
-            {/* Category Link Filosofia */}
+            {/* Category Link Hohen */}
             <Link 
-                to={`/category/${categories.filosofia}`} 
-                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105'>
+                to={`/category/${categories.hohen}`} 
+                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-red-500 to-blue-500 transition-all hover:scale-105'>
                 <div className='p-5 flex justify-center items-center'>
-                    <img src={imgFilosofia} alt={`Categoria ${categories.filosofia}`} className='w-36'/>
+                    <img src={imgHohen} alt={`Categoria ${categories.hohen}`} className='scale-125'/>
                 </div>
 
-                <h1 className="text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
-                    {categories.filosofia}
+                <h1 className="text-center text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
+                    {categories.hohen}
                 </h1>
             </Link>
 
-            {/* Category Link Geografía */}
+            {/* Category Link Sinnoh */}
             <Link 
-                to={`/category/${categories.geografia}`} 
-                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105'>
+                to={`/category/${categories.sinnoh}`} 
+                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-blue-500 to-yellow-500 transition-all hover:scale-105'>
                 <div className='p-5 flex justify-center items-center'>
-                    <img src={imgGeografia} alt={`Categoria ${categories.geografia}`} className='w-36'/>
+                    <img src={imgSinnoh} alt={`Categoria ${categories.sinnoh}`} className='scale-125'/>
                 </div>
 
-                <h1 className="text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
-                    {categories.geografia}
+                <h1 className="text-center text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
+                    {categories.sinnoh}
                 </h1>
             </Link>
 
-            {/* Category Link Historia */}
+            {/* Category Link Teselia */}
             <Link 
-                to={`/category/${categories.historia}`} 
-                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105'>
+                to={`/category/${categories.teselia}`} 
+                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-yellow-500 to-lime-500 transition-all hover:scale-105'>
                 <div className='p-5 flex justify-center items-center'>
-                    <img src={imgHistoria} alt={`Categoria ${categories.historia}`} className='w-36'/>
+                    <img src={imgTeselia} alt={`Categoria ${categories.teselia}`} className='scale-150'/> {/* Revisar imagen porque se ve un tanto pequeña. */}
                 </div>
 
-                <h1 className="text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
-                    {categories.historia}
+                <h1 className="text-center text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
+                    {categories.teselia}
                 </h1>
             </Link>
 
-            {/* Category Link Literatura */}
+            {/* Category Link Kalos */}
             <Link 
-                to={`/category/${categories.literatura}`} 
-                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105'>
+                to={`/category/${categories.kalos}`} 
+                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-lime-500 to-teal-500 transition-all hover:scale-105'>
                 <div className='p-5 flex justify-center items-center'>
-                    <img src={imgLiteratura} alt={`Categoria ${categories.literatura}`} className='w-36'/>
+                    <img src={imgKalos} alt={`Categoria ${categories.kalos}`} className='w-screen'/>
                 </div>
 
-                <h1 className="text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
-                    {categories.literatura}
+                <h1 className="text-center text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
+                    {categories.kalos}
                 </h1>
             </Link>
 
-            {/* Category Link Tecnología */}
+            {/* Category Link Alola */}
             <Link 
-                to={`/category/${categories.tecnologia}`} 
-                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105'>
+                to={`/category/${categories.alola}`} 
+                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-teal-500 to-purple-500 transition-all hover:scale-105'>
                 <div className='p-5 flex justify-center items-center'>
-                    <img src={imgTecnologia} alt={`Categoria ${categories.tecnologia}`} className='w-36'/>
+                    <img src={imgAlola} alt={`Categoria ${categories.alola}`} className='w-screen'/>
                 </div>
 
-                <h1 className="text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
-                    {categories.tecnologia}
+                <h1 className="text-center text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
+                    {categories.alola}
+                </h1>
+            </Link>
+
+                        {/* Category Link Galar */}
+                        <Link 
+                to={`/category/${categories.galar}`} 
+                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-teal-500 to-purple-500 transition-all hover:scale-105'>
+                <div className='p-5 flex justify-center items-center'>
+                    <img src={imgGalar} alt={`Categoria ${categories.galar}`} className='w-screen'/>
+                </div>
+
+                <h1 className="text-center text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
+                    {categories.galar}
                 </h1>
             </Link>
         </div>

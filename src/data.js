@@ -1,39 +1,43 @@
-import Ciencia from './assets/ciencia.png';
-import Deportes from './assets/deportes.png';
-import Filosofia from './assets/filosofía.png';
-import Geografia from './assets/geografía.png';
-import Historia from './assets/historia.png';
-import Literatura from './assets/literatura.png';
-import Tecnologia from './assets/tecnología.png';
+import Kanto from './assets/kanto.png';
+import Johto from './assets/johto.png';
+import Hohen from './assets/hohen.png';
+import Sinnoh from './assets/sinnoh.png';
+import Teselia from './assets/teselia.png';
+import Kalos from './assets/kalos.png';
+import Alola from './assets/alola.png';
+import Galar from './assets/galar.png';
 
 export const imgs = [
-	Ciencia,
-	Deportes,
-	Filosofia,
-	Geografia,
-	Historia,
-	Literatura,
-	Tecnologia,
+	Kanto,
+	Johto,
+	Hohen,
+	Sinnoh,
+	Teselia,
+	Kalos,
+	Alola,
+	Galar,
 ];
 
 export const categories = {
-	historia: 'Historia', 
-	literatura: 'Literatura',
-	deportes: 'Deportes',
-	ciencia: 'Ciencia',
-	filosofia: 'Filosofía',
-	tecnologia: 'Tecnología',
-	geografia: 'Geografía',
+	teselia: 'Teselia', 
+	kalos: 'Kalos',
+	johto: 'Johto',
+	kanto: 'Kanto',
+	hohen: 'Hohen',
+	alola: 'Alola',
+	sinnoh: 'Sinnoh',
+	galar: 'Galar',
 };
 
 const {
-	historia,
+	teselia,
 	tecnologia,
-	literatura,
-	deportes,
-	ciencia,
-	filosofia,
-	geografia,
+	kalos,
+	johto,
+	kanto,
+	hohen,
+	sinnoh,
+	galar,
 } = categories;
 
 export const questions = [
@@ -41,7 +45,7 @@ export const questions = [
 		id: 1,
 		difficulty: 'Fácil',
 		question: '¿Qué evento inició la Primera Guerra Mundial?',
-		category: historia,
+		category: teselia,
 		correct_answer:
 			'El asesinato del Archiduque Franz Ferdinand de Austria',
 		incorrect_answers: [
@@ -54,7 +58,7 @@ export const questions = [
 		id: 2,
 		difficulty: 'Fácil',
 		question: '¿Quién es el autor de "Cien años de soledad"?        ',
-		category: literatura,
+		category: kalos,
 		correct_answer: 'Gabriel García Márquez',
 		incorrect_answers: [
 			'Julio Cortázar',
@@ -66,7 +70,7 @@ export const questions = [
 		id: 3,
 		difficulty: 'Fácil',
 		question: '¿En qué deporte se utiliza un disco?',
-		category: deportes,
+		category: johto,
 		correct_answer: 'Hockey sobre hielo',
 		incorrect_answers: ['Fútbol', 'Baloncesto', 'Béisbol'],
 	},
@@ -75,7 +79,7 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			"¿Qué sustancia es conocida como la 'molécula de la vida'?",
-		category: ciencia,
+		category: kanto,
 		correct_answer: 'El ADN',
 		incorrect_answers: ['La glucosa', 'La insulina', 'La proteína'],
 	},
@@ -84,7 +88,7 @@ export const questions = [
 		difficulty: 'Difícil',
 		question:
 			'¿Quién es considerado el padre de la filosofía occidental?',
-		category: filosofia,
+		category: hohen,
 		correct_answer: 'Sócrates',
 		incorrect_answers: ['Aristóteles', 'Platón', 'Nietzsche'],
 	},
@@ -100,7 +104,7 @@ export const questions = [
 		id: 7,
 		difficulty: 'Fácil',
 		question: '¿Cuál es el río más largo del mundo?',
-		category: geografia,
+		category: sinnoh,
 		correct_answer: 'El Río Amazonas',
 		incorrect_answers: [
 			'El Río Nilo',
@@ -112,7 +116,7 @@ export const questions = [
 		id: 8,
 		difficulty: 'Medio',
 		question: '¿Cuál es el océano más grande del mundo?',
-		category: geografia,
+		category: sinnoh,
 		correct_answer: 'El Océano Pacífico',
 		incorrect_answers: [
 			'El Océano Atlántico',
@@ -124,7 +128,7 @@ export const questions = [
 		id: 9,
 		difficulty: 'Difícil',
 		question: '¿Cuál es la obra más famosa de William Shakespeare?',
-		category: literatura,
+		category: kalos,
 		correct_answer: 'Hamlet',
 		incorrect_answers: ['Romeo y Julieta', 'Macbeth', 'El Rey Lear'],
 	},
@@ -132,7 +136,7 @@ export const questions = [
 		id: 10,
 		difficulty: 'Medio',
 		question: '¿Qué es lo que se mide con la escala de Richter?',
-		category: ciencia,
+		category: kanto,
 		correct_answer: 'La magnitud de los terremotos',
 		incorrect_answers: [
 			'La velocidad del sonido',
@@ -144,7 +148,7 @@ export const questions = [
 		id: 11,
 		difficulty: 'Fácil',
 		question: '¿Qué país ganó el primer Mundial de Fútbol?',
-		category: deportes,
+		category: johto,
 		correct_answer: 'Uruguay',
 		incorrect_answers: ['Brasil', 'Argentina', 'Alemania'],
 	},
@@ -152,7 +156,7 @@ export const questions = [
 		id: 12,
 		difficulty: 'Medio',
 		question: '¿Qué es el efecto invernadero?',
-		category: ciencia,
+		category: kanto,
 		correct_answer:
 			'Un fenómeno atmosférico que retiene el calor en la Tierra',
 		incorrect_answers: [
@@ -166,7 +170,7 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			'¿En qué año se celebraron los primeros Juegos Olímpicos modernos?',
-		category: deportes,
+		category: johto,
 		correct_answer: '1896',
 		incorrect_answers: ['1900', '1924', '1936'],
 	},
@@ -174,7 +178,7 @@ export const questions = [
 		id: 14,
 		difficulty: 'Fácil',
 		question: '¿Cuál es el planeta más grande del sistema solar?',
-		category: ciencia,
+		category: kanto,
 		correct_answer: 'Júpiter',
 		incorrect_answers: ['Saturno', 'Neptuno', 'Urano'],
 	},
@@ -182,7 +186,7 @@ export const questions = [
 		id: 15,
 		difficulty: 'Fácil',
 		question: "¿Quién escribió la obra 'Don Quijote de la Mancha'?",
-		category: literatura,
+		category: kalos,
 		correct_answer: 'Miguel de Cervantes',
 		incorrect_answers: [
 			'Federico García Lorca',
@@ -195,7 +199,7 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			'¿Cuál es el elemento químico más abundante en la Tierra?',
-		category: ciencia,
+		category: kanto,
 		correct_answer: 'Oxígeno',
 		incorrect_answers: ['Nitrógeno', 'Hierro', 'Silicio'],
 	},
@@ -203,7 +207,7 @@ export const questions = [
 		id: 17,
 		difficulty: 'Medio',
 		question: '¿Cuál es el país más poblado del mundo?',
-		category: geografia,
+		category: sinnoh,
 		correct_answer: 'China',
 		incorrect_answers: ['India', 'Estados Unidos', 'Brasil'],
 	},
@@ -212,7 +216,7 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			'¿Quién es considerado el padre de la filosofía occidental?',
-		category: filosofia,
+		category: hohen,
 		correct_answer: 'Sócrates',
 		incorrect_answers: ['Platón', 'Aristóteles', 'Descartes'],
 	},
@@ -220,7 +224,7 @@ export const questions = [
 		id: 19,
 		difficulty: 'Difícil',
 		question: '¿Qué científico propuso la teoría del Big Bang?',
-		category: ciencia,
+		category: kanto,
 		correct_answer: 'Georges Lemaître',
 		incorrect_answers: [
 			'Albert Einstein',
@@ -232,7 +236,7 @@ export const questions = [
 		id: 20,
 		difficulty: 'Fácil',
 		question: '¿Quién es el autor de la novela "El viejo y el mar"?',
-		category: literatura,
+		category: kalos,
 		correct_answer: 'Ernest Hemingway',
 		incorrect_answers: [
 			'William Shakespeare',
@@ -244,7 +248,7 @@ export const questions = [
 		id: 21,
 		difficulty: 'Fácil',
 		question: '¿Cuál es el órgano más grande del cuerpo humano?',
-		category: ciencia,
+		category: kanto,
 		correct_answer: 'La piel',
 		incorrect_answers: ['El hígado', 'El corazón', 'Los pulmones'],
 	},
@@ -264,7 +268,7 @@ export const questions = [
 		id: 23,
 		difficulty: 'Medio',
 		question: '¿En qué año terminó la Segunda Guerra Mundial?',
-		category: historia,
+		category: teselia,
 		correct_answer: '1945',
 		incorrect_answers: ['1939', '1941', '1943'],
 	},
@@ -272,7 +276,7 @@ export const questions = [
 		id: 24,
 		difficulty: 'Fácil',
 		question: '¿Cuál es el planeta más cercano al Sol?',
-		category: ciencia,
+		category: kanto,
 		correct_answer: 'Mercurio',
 		incorrect_answers: ['Venus', 'Marte', 'Júpiter'],
 	},
@@ -281,7 +285,7 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			"¿Qué escritor es conocido por haber escrito 'Cien años de soledad'?",
-		category: literatura,
+		category: kalos,
 		correct_answer: 'Gabriel García Márquez',
 		incorrect_answers: [
 			'Jorge Luis Borges',
@@ -294,7 +298,7 @@ export const questions = [
 		difficulty: 'Difícil',
 		question:
 			'¿Qué país es el más grande en términos de superficie terrestre?',
-		category: geografia,
+		category: sinnoh,
 		correct_answer: 'Rusia',
 		incorrect_answers: ['Estados Unidos', 'China', 'Australia'],
 	},
@@ -302,7 +306,7 @@ export const questions = [
 		id: 27,
 		difficulty: 'Medio',
 		question: '¿Cuál es la capital de Canadá?',
-		category: geografia,
+		category: sinnoh,
 		correct_answer: 'Ottawa',
 		incorrect_answers: ['Toronto', 'Montreal', 'Vancouver'],
 	},
@@ -310,7 +314,7 @@ export const questions = [
 		id: 28,
 		difficulty: 'Fácil',
 		question: '¿Qué elemento químico tiene el símbolo H?',
-		category: ciencia,
+		category: kanto,
 		correct_answer: 'Hidrógeno',
 		incorrect_answers: ['Helio', 'Hierro', 'Hormigón'],
 	},
@@ -318,8 +322,8 @@ export const questions = [
 		id: 29,
 		difficulty: 'Medio',
 		question:
-			'¿Qué jugador de fútbol ha ganado más Balones de Oro en la historia?',
-		category: deportes,
+			'¿Qué jugador de fútbol ha ganado más Balones de Oro en la teselia?',
+		category: johto,
 		correct_answer: 'Lionel Messi',
 		incorrect_answers: [
 			'Cristiano Ronaldo',
@@ -331,7 +335,7 @@ export const questions = [
 		id: 30,
 		difficulty: 'Fácil',
 		question: '¿En qué año ocurrió la Revolución Francesa?',
-		category: historia,
+		category: teselia,
 		correct_answer: '1789',
 		incorrect_answers: ['1848', '1917', '1492'],
 	},
@@ -427,14 +431,14 @@ export const questions = [
 		incorrect_answers: [
 			'Una red de computadoras en una organización',
 			'Una red de computadoras conectadas a internet',
-			'Una red de computadoras que solo utiliza tecnología inalámbrica',
+			'Una red de computadoras que solo utiliza alola inalámbrica',
 		],
 	},
 	{
 		id: 39,
 		difficulty: 'Difícil',
 		question: '¿En qué año se produjo la Guerra de los Cien Años?',
-		category: historia,
+		category: teselia,
 		correct_answer: '1337',
 		incorrect_answers: ['1066', '1415', '1642'],
 	},
@@ -442,7 +446,7 @@ export const questions = [
 		id: 40,
 		difficulty: 'Fácil',
 		question: '¿En qué año se produjo el ataque a Pearl Harbor?',
-		category: historia,
+		category: teselia,
 		correct_answer: '1941',
 		incorrect_answers: ['1939', '1942', '1945'],
 	},
@@ -450,7 +454,7 @@ export const questions = [
 		id: 41,
 		difficulty: 'Medio',
 		question: '¿Qué tratado dio fin a la Primera Guerra Mundial?',
-		category: historia,
+		category: teselia,
 		correct_answer: 'Tratado de Versalles',
 		incorrect_answers: [
 			'Tratado de Tordesillas',
@@ -463,7 +467,7 @@ export const questions = [
 		difficulty: 'Difícil',
 		question:
 			'¿Quién fue el último emperador de la Dinastía Qing en China?',
-		category: historia,
+		category: teselia,
 		correct_answer: 'Puyi',
 		incorrect_answers: ['Hongwu', 'Wuzong', 'Kangxi'],
 	},
@@ -472,7 +476,7 @@ export const questions = [
 		difficulty: 'Fácil',
 		question:
 			'¿Cuál fue el nombre de la primera expedición de Cristóbal Colón?',
-		category: historia,
+		category: teselia,
 		correct_answer: 'La Santa María',
 		incorrect_answers: [
 			'La Pinta',
@@ -485,7 +489,7 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			'¿Cuál fue el primer país en enviar un objeto hecho por el hombre a la luna?',
-		category: historia,
+		category: teselia,
 		correct_answer: 'Estados Unidos',
 		incorrect_answers: ['Unión Soviética', 'China', 'Japón'],
 	},
@@ -494,7 +498,7 @@ export const questions = [
 		difficulty: 'Difícil',
 		question:
 			'¿Cuál fue la primera ciudad en el mundo en tener una población de más de un millón de habitantes?',
-		category: historia,
+		category: teselia,
 		correct_answer: 'Roma',
 		incorrect_answers: ['Atenas', 'Babilonia', 'Nínive'],
 	},
@@ -503,7 +507,7 @@ export const questions = [
 		difficulty: 'Fácil',
 		question:
 			'¿Quién fue el primer presidente de los Estados Unidos?',
-		category: historia,
+		category: teselia,
 		correct_answer: 'George Washington',
 		incorrect_answers: [
 			'Thomas Jefferson',
@@ -515,7 +519,7 @@ export const questions = [
 		id: 47,
 		difficulty: 'Medio',
 		question: '¿Cuál fue la primera dinastía en gobernar en China?',
-		category: historia,
+		category: teselia,
 		correct_answer: 'Xia',
 		incorrect_answers: ['Han', 'Tang', 'Song'],
 	},
@@ -523,7 +527,7 @@ export const questions = [
 		id: 48,
 		difficulty: 'Fácil',
 		question: '¿Quién escribió la obra "Don Quijote de la Mancha"?',
-		category: literatura,
+		category: kalos,
 		correct_answer: 'Miguel de Cervantes',
 		incorrect_answers: [
 			'Gabriel García Márquez',
@@ -536,7 +540,7 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			'¿Cuál de las siguientes novelas es escrita por Gabriel García Márquez?',
-		category: literatura,
+		category: kalos,
 		correct_answer: 'Cien años de soledad',
 		incorrect_answers: [
 			'Rayuela',
@@ -548,7 +552,7 @@ export const questions = [
 		id: 50,
 		difficulty: 'Difícil',
 		question: '¿Quién escribió "La metamorfosis"?',
-		category: literatura,
+		category: kalos,
 		correct_answer: 'Franz Kafka',
 		incorrect_answers: [
 			'Virginia Woolf',
@@ -560,7 +564,7 @@ export const questions = [
 		id: 51,
 		difficulty: 'Fácil',
 		question: '¿Quién escribió "El retrato de Dorian Gray"?',
-		category: literatura,
+		category: kalos,
 		correct_answer: 'Oscar Wilde',
 		incorrect_answers: [
 			'Edgar Allan Poe',
@@ -573,7 +577,7 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			'¿Cuál de las siguientes obras no fue escrita por William Shakespeare?',
-		category: literatura,
+		category: kalos,
 		correct_answer: 'Moby Dick',
 		incorrect_answers: ['Hamlet', 'Macbeth', 'Otelo'],
 	},
@@ -581,8 +585,8 @@ export const questions = [
 		id: 53,
 		difficulty: 'Difícil',
 		question:
-			'¿Cuál de las siguientes obras de José Saramago recibió el Premio Nobel de Literatura?',
-		category: literatura,
+			'¿Cuál de las siguientes obras de José Saramago recibió el Premio Nobel de kalos?',
+		category: kalos,
 		correct_answer: 'Ensayo sobre la ceguera',
 		incorrect_answers: [
 			'La caverna',
@@ -595,7 +599,7 @@ export const questions = [
 		difficulty: 'Fácil',
 		question:
 			'¿Quién escribió la novela "El guardián entre el centeno"?',
-		category: literatura,
+		category: kalos,
 		correct_answer: 'J.D. Salinger',
 		incorrect_answers: [
 			'F. Scott Fitzgerald',
@@ -607,7 +611,7 @@ export const questions = [
 		id: 55,
 		difficulty: 'Difícil',
 		question: '¿Cuál es el país más grande de África?',
-		category: geografia,
+		category: sinnoh,
 		correct_answer: 'Argelia',
 		incorrect_answers: [
 			'Sudán',
@@ -619,7 +623,7 @@ export const questions = [
 		id: 56,
 		difficulty: 'Fácil',
 		question: '¿Cuál es el país más grande del mundo?',
-		category: geografia,
+		category: sinnoh,
 		correct_answer: 'Rusia',
 		incorrect_answers: ['China', 'Estados Unidos', 'Canadá'],
 	},
@@ -627,7 +631,7 @@ export const questions = [
 		id: 57,
 		difficulty: 'Medio',
 		question: '¿En qué continente se encuentra el lago Baikal?',
-		category: geografia,
+		category: sinnoh,
 		correct_answer: 'Asia',
 		incorrect_answers: ['Europa', 'África', 'América del Sur'],
 	},
@@ -635,7 +639,7 @@ export const questions = [
 		id: 58,
 		difficulty: 'Medio',
 		question: '¿Cuál es el país más poblado del mundo?',
-		category: geografia,
+		category: sinnoh,
 		correct_answer: 'China',
 		incorrect_answers: ['India', 'Estados Unidos', 'Indonesia'],
 	},
@@ -643,7 +647,7 @@ export const questions = [
 		id: 59,
 		difficulty: 'Difícil',
 		question: '¿Cuál es la montaña más alta del mundo?',
-		category: geografia,
+		category: sinnoh,
 		correct_answer: 'El Monte Everest',
 		incorrect_answers: ['El K2', 'El Mont Blanc', 'El Aconcagua'],
 	},
@@ -651,7 +655,7 @@ export const questions = [
 		id: 60,
 		difficulty: 'Difícil',
 		question: '¿Cuál es el país más pequeño del mundo?',
-		category: geografia,
+		category: sinnoh,
 		correct_answer: 'El Vaticano',
 		incorrect_answers: ['Mónaco', 'Nauru', 'Tuvalu'],
 	},
@@ -659,7 +663,7 @@ export const questions = [
 		id: 61,
 		difficulty: 'Medio',
 		question: '¿Cuál es el país más extenso de África?',
-		category: geografia,
+		category: sinnoh,
 		correct_answer: 'Argelia',
 		incorrect_answers: ['Nigeria', 'Egipto', 'Sudáfrica'],
 	},
@@ -667,7 +671,7 @@ export const questions = [
 		id: 62,
 		difficulty: 'Fácil',
 		question: '¿Qué país ganó la Copa Mundial de la FIFA en 2018?',
-		category: deportes,
+		category: johto,
 		correct_answer: 'Francia',
 		incorrect_answers: ['Alemania', 'Brasil', 'Argentina'],
 	},
@@ -675,7 +679,7 @@ export const questions = [
 		id: 63,
 		difficulty: 'Fácil',
 		question: '¿Qué deporte se juega en Wimbledon?',
-		category: deportes,
+		category: johto,
 		correct_answer: 'Tenis',
 		incorrect_answers: ['Golf', 'Fútbol', 'Rugby'],
 	},
@@ -684,7 +688,7 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			'¿Cuántos puntos vale un touchdown en el fútbol americano?',
-		category: deportes,
+		category: johto,
 		correct_answer: '6',
 		incorrect_answers: ['4', '7', '5'],
 	},
@@ -693,7 +697,7 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			'¿Cuál es el jugador de baloncesto con más anillos de campeonato en la NBA?',
-		category: deportes,
+		category: johto,
 		correct_answer: 'Bill Russell',
 		incorrect_answers: [
 			'Michael Jordan',
@@ -706,7 +710,7 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			'¿Cuál es el país de origen del futbolista Lionel Messi?',
-		category: deportes,
+		category: johto,
 		correct_answer: 'Argentina',
 		incorrect_answers: ['Brasil', 'España', 'Portugal'],
 	},
@@ -715,7 +719,7 @@ export const questions = [
 		difficulty: 'Difícil',
 		question:
 			'¿En qué año se celebraron los Juegos Olímpicos de Beijing?',
-		category: deportes,
+		category: johto,
 		correct_answer: '2008',
 		incorrect_answers: ['2012', '2004', '2016'],
 	},
@@ -723,8 +727,8 @@ export const questions = [
 		id: 68,
 		difficulty: 'Difícil',
 		question:
-			'¿Quién es el máximo goleador en la historia de la Liga Española?',
-		category: deportes,
+			'¿Quién es el máximo goleador en la teselia de la Liga Española?',
+		category: johto,
 		correct_answer: 'Lionel Messi',
 		incorrect_answers: [
 			'Cristiano Ronaldo',
@@ -736,13 +740,13 @@ export const questions = [
 		id: 69,
 		difficulty: 'Difícil',
 		question: '¿En qué deporte se utiliza el término "smash"?',
-		category: deportes,
+		category: johto,
 		correct_answer: 'Bádminton',
 		incorrect_answers: ['Voleibol', 'Tenis', 'Squash'],
 	},
 	{
 		id: 70,
-		category: filosofia,
+		category: hohen,
 		difficulty: 'Fácil',
 		question: '¿Cuál es la obra más conocida de Platón?',
 		correct_answer: 'La República',
@@ -750,7 +754,7 @@ export const questions = [
 	},
 	{
 		id: 71,
-		category: filosofia,
+		category: hohen,
 		difficulty: 'Medio',
 		question:
 			'¿Cuál es el concepto central de la filosofía de Descartes?',
@@ -763,7 +767,7 @@ export const questions = [
 	},
 	{
 		id: 72,
-		category: filosofia,
+		category: hohen,
 		difficulty: 'Difícil',
 		question: '¿Qué es la dialéctica en la filosofía de Hegel?',
 		correct_answer:
@@ -776,7 +780,7 @@ export const questions = [
 	},
 	{
 		id: 73,
-		category: filosofia,
+		category: hohen,
 		difficulty: 'Medio',
 		question: '¿Qué es el nihilismo en la filosofía?',
 		correct_answer: 'La negación de todos los valores y creencias',
@@ -788,7 +792,7 @@ export const questions = [
 	},
 	{
 		id: 74,
-		category: filosofia,
+		category: hohen,
 		difficulty: 'Difícil',
 		question:
 			'¿Qué es la deconstrucción en la filosofía de Jacques Derrida?',
@@ -802,7 +806,7 @@ export const questions = [
 	},
 	{
 		id: 75,
-		category: filosofia,
+		category: hohen,
 		difficulty: 'Fácil',
 		question: '¿Qué es la ética?',
 		correct_answer:
@@ -815,7 +819,7 @@ export const questions = [
 	},
 	{
 		id: 76,
-		category: filosofia,
+		category: hohen,
 		difficulty: 'Medio',
 		question:
 			'¿Qué es el imperativo categórico en la filosofía de Kant?',
@@ -831,7 +835,7 @@ export const questions = [
 		id: 77,
 		difficulty: 'Fácil',
 		question: '¿Quién fue el autor de la obra "La República"?',
-		category: filosofia,
+		category: hohen,
 		correct_answer: 'Platón',
 		incorrect_answers: ['Aristóteles', 'Sócrates', 'Nietzsche'],
 	},
@@ -840,7 +844,7 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			'¿Cuál es el término filosófico para referirse al estudio del conocimiento?',
-		category: filosofia,
+		category: hohen,
 		correct_answer: 'Epistemología',
 		incorrect_answers: ['Ontología', 'Metafísica', 'Lógica'],
 	},
@@ -849,7 +853,7 @@ export const questions = [
 		difficulty: 'Difícil',
 		question:
 			'¿Quién escribió el libro "El mundo como voluntad y representación"?',
-		category: filosofia,
+		category: hohen,
 		correct_answer: 'Arthur Schopenhauer',
 		incorrect_answers: [
 			'Friedrich Nietzsche',
@@ -861,13 +865,13 @@ export const questions = [
 		id: 80,
 		difficulty: 'Difícil',
 		question: '¿Cuál es la partícula subatómica más pesada?',
-		category: ciencia,
+		category: kanto,
 		correct_answer: 'Quark top',
 		incorrect_answers: ['Electrón', 'Protón', 'Neutrón'],
 	},
 	{
 		id: 81,
-		category: ciencia,
+		category: kanto,
 		difficulty: 'Medio',
 		question: '¿Qué es la capa de ozono?',
 		correct_answer:
@@ -880,7 +884,7 @@ export const questions = [
 	},
 	{
 		id: 82,
-		category: ciencia,
+		category: kanto,
 		difficulty: 'Difícil',
 		question: '¿Qué es la antimateria?',
 		correct_answer:
@@ -895,7 +899,7 @@ export const questions = [
 		id: 83,
 		difficulty: 'Fácil',
 		question: '¿Qué es el acrónimo "CPU" en inglés?',
-		category: tecnologia,
+		category: galar,
 		correct_answer: 'Central Processing Unit',
 		incorrect_answers: [
 			'Computer Personal Unit',
@@ -908,7 +912,62 @@ export const questions = [
 		difficulty: 'Medio',
 		question:
 			'¿Cuál es el nombre de la primera computadora electrónica digital?',
-		category: tecnologia,
+		category: galar,
+		correct_answer: 'ENIAC',
+		incorrect_answers: ['UNIVAC', 'COLOSSUS', 'EDSAC'],
+	},
+
+	{
+		id: 85,
+		difficulty: 'Medio',
+		question:
+			'¿Cuál es el nombre de la primera computadora electrónica digital?',
+		category: galar,
+		correct_answer: 'ENIAC',
+		incorrect_answers: ['UNIVAC', 'COLOSSUS', 'EDSAC'],
+	},
+	{
+		id: 86,
+		difficulty: 'Medio',
+		question:
+			'¿Cuál es el nombre de la primera computadora electrónica digital?',
+		category: galar,
+		correct_answer: 'ENIAC',
+		incorrect_answers: ['UNIVAC', 'COLOSSUS', 'EDSAC'],
+	},
+	{
+		id: 87,
+		difficulty: 'Medio',
+		question:
+			'¿Cuál es el nombre de la primera computadora electrónica digital?',
+		category: galar,
+		correct_answer: 'ENIAC',
+		incorrect_answers: ['UNIVAC', 'COLOSSUS', 'EDSAC'],
+	},
+	{
+		id: 88,
+		difficulty: 'Medio',
+		question:
+			'¿Cuál es el nombre de la primera computadora electrónica digital?',
+		category: galar,
+		correct_answer: 'ENIAC',
+		incorrect_answers: ['UNIVAC', 'COLOSSUS', 'EDSAC'],
+	},
+	{
+		id: 89,
+		difficulty: 'Medio',
+		question:
+			'¿Cuál es el nombre de la primera computadora electrónica digital?',
+		category: galar,
+		correct_answer: 'ENIAC',
+		incorrect_answers: ['UNIVAC', 'COLOSSUS', 'EDSAC'],
+	},
+	{
+		id: 90,
+		difficulty: 'Medio',
+		question:
+			'¿Cuál es el nombre de la primera computadora electrónica digital?',
+		category: galar,
 		correct_answer: 'ENIAC',
 		incorrect_answers: ['UNIVAC', 'COLOSSUS', 'EDSAC'],
 	},
