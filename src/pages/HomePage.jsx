@@ -1,9 +1,10 @@
 import React from 'react'
+import CategoryList from '../components/CategoryList'
 
 export const HomePage = () => {
     return (
-        <div>
-        HomePage
+        <div className='container'>
+            <CategoryList/>
         </div>
     )
 }
