@@ -31,7 +31,7 @@ export const categories = {
 
 const {
 	teselia,
-	tecnologia,
+	alola,
 	kalos,
 	johto,
 	kanto,
@@ -96,7 +96,7 @@ export const questions = [
 		id: 6,
 		difficulty: 'Medio',
 		question: '¿En qué año fue fundada la compañía Apple?',
-		category: tecnologia,
+		category: alola,
 		correct_answer: '1976',
 		incorrect_answers: ['1984', '1991', '1967'],
 	},
@@ -256,7 +256,7 @@ export const questions = [
 		id: 22,
 		difficulty: 'Medio',
 		question: '¿Quién es el creador del sistema operativo Linux?',
-		category: tecnologia,
+		category: alola,
 		correct_answer: 'Linus Torvalds',
 		incorrect_answers: [
 			'Steve Jobs',
@@ -343,7 +343,7 @@ export const questions = [
 	{
 		id: 31,
 		difficulty: 'Fácil',
-		category: tecnologia,
+		category: alola,
 		question: '¿Qué significa la sigla HTML?',
 		correct_answer: 'HyperText Markup Language',
 		incorrect_answers: [
@@ -355,7 +355,7 @@ export const questions = [
 	{
 		id: 32,
 		difficulty: 'Fácil',
-		category: tecnologia,
+		category: alola,
 		question: '¿Cuál es el navegador web más utilizado en el mundo?',
 		correct_answer: 'Google Chrome',
 		incorrect_answers: ['Safari', 'Firefox', 'Internet Explorer'],
@@ -363,7 +363,7 @@ export const questions = [
 	{
 		id: 33,
 		difficulty: 'Fácil',
-		category: tecnologia,
+		category: alola,
 		question:
 			'¿Qué lenguaje de programación es más utilizado para el desarrollo web?',
 		correct_answer: 'JavaScript',
@@ -372,7 +372,7 @@ export const questions = [
 	{
 		id: 34,
 		difficulty: 'Medio',
-		category: tecnologia,
+		category: alola,
 		question: '¿Qué es un servidor web?',
 		correct_answer:
 			'Un programa que recibe y procesa solicitudes HTTP',
@@ -385,7 +385,7 @@ export const questions = [
 	{
 		id: 35,
 		difficulty: 'Medio',
-		category: tecnologia,
+		category: alola,
 		question: '¿Qué es un ataque de phishing?',
 		correct_answer:
 			'Un intento de obtener información confidencial a través de un correo electrónico falso',
@@ -398,7 +398,7 @@ export const questions = [
 	{
 		id: 36,
 		difficulty: 'Medio',
-		category: tecnologia,
+		category: alola,
 		question: '¿Qué es un archivo CSV?',
 		correct_answer:
 			'Un archivo de texto con valores separados por comas',
@@ -411,7 +411,7 @@ export const questions = [
 	{
 		id: 37,
 		difficulty: 'Difícil',
-		category: tecnologia,
+		category: alola,
 		question: '¿Qué es un algoritmo de cifrado asimétrico?',
 		correct_answer:
 			'Un método de cifrado que utiliza dos claves diferentes',
@@ -424,7 +424,7 @@ export const questions = [
 	{
 		id: 38,
 		difficulty: 'Difícil',
-		category: tecnologia,
+		category: alola,
 		question: '¿Qué es una red privada virtual (VPN)?',
 		correct_answer:
 			'Una conexión segura a una red privada a través de internet',
