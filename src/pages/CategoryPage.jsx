@@ -22,15 +22,23 @@ export const CategoryPage = () => {
         questions.filter(question => question.category === category)
         )
 
+    const [indexQuestion, setIndexQuestion] = useState(0);
+
     useEffect(() => {
         const newQuestions = shuffleArray(questionsFiltered);
         setQuestionsFiltered(newQuestions);
         //console.log(newQuestions)
     }, []);
+        //console.log(questionsFiltered.length)
 
     return (
         <div className='container flex flex-col items-center justify-center gap-10' style={{height: 'calc(100vh - 5rem)'}}>
-            <Question/>
+            <Question 
+                filteredQuestion={questionsFiltered[indexQuestion]} 
+                setIndexQuestion={setIndexQuestion}
+                indexQuestion={indexQuestion}
+                questionsFiltered={questionsFiltered}
+            />
         </div>
     )
 }
