@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { imgs , categories } from '../data'
 import CategoryCard from './CategoryCard'
 
 const [ 
     imgKanto, 
     imgJohto, 
-    imgHohen, 
+    imghoenn, 
     imgSinnoh, 
     imgTeselia,
     imgKalos,
@@ -48,11 +47,11 @@ const CategoryList = () => {
                 gradientColor='from-pink-500 to-red-500'
                 />
 
-            {/* Category Link Hohen */}
+            {/* Category Link hoenn */}
             <CategoryCard 
-                category={categories.hohen} /* props */
-                src={imgHohen} 
-                alt={`Categoria ${categories.hohen}`}
+                category={categories.hoenn} /* props */
+                src={imghoenn} 
+                alt={`Categoria ${categories.hoenn}`}
                 gradientColor='from-red-500 to-blue-500'
                 />
 
