@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from 'react'
+import Results from './Results'
 
 const Question = ({ filteredQuestion, setIndexQuestion, indexQuestion, questionsFiltered, setActiveQuiz,
 }) => {
 
   /* Estado para establecer las preguntas random. */
   const [answersRandom, setAnswersRandom] = useState([])
+
+  /* Iniciamos el score en 0 */
+  const [score, setScore] = useState(0)
+  const [selectAnswerIndex, setSelectAnswerIndex] = useState(null) /* lo inicializamos en null, porque el jugador inicia sin ninguna respuesta pre seleccionada. */
+  /* Iniciamos un estado ansered para verificar si el usuario ha respondido algo o no. */
+  const [answered, setAnswered] = useState(false)
+  const [activeResults, setActiveResults] = useState(false)
 
   useEffect(() => {
     /* Creamos una constante que guarde las respuestas incorrectas y la correcta. */
@@ -18,11 +26,33 @@ const Question = ({ filteredQuestion, setIndexQuestion, indexQuestion, questions
 
   /* Cambio y avance en la pregunta. */
   const onNextQuestion = () => {
-    setIndexQuestion(indexQuestion + 1 )
+    setIndexQuestion(indexQuestion + 1 );
+    setSelectAnswerIndex(null);
+    setAnswered(false);
+  }
+
+  const checkAnswer = (answerText, index) => {
+
+    if(answerText === filteredQuestion.correct_answer) {
+      setScore(score + 1);
+    }
+    setSelectAnswerIndex(index)
+    setAnswered(true)
+  }
+
+  /* Reseteador de quiz */
+  const onReset = () => {
+    setScore(0);
+    setActiveQuiz(false);
+    setIndexQuestion(0)
   }
 
   return (
     <>
+
+    {activeResults ? (
+      <Results questionsFiltered={questionsFiltered} score={score} onReset={onReset}/>
+    ) : (
       <div className="flex flex-col justify-between shadow-md shadow-slate-300 w-[600px] h-[600px] p-10 rounded-lg">
         <span className="text-xl font-bold">
           {/* numero de pregunta actual y numero de preguntas totales. */}
@@ -34,7 +64,9 @@ const Question = ({ filteredQuestion, setIndexQuestion, indexQuestion, questions
           <span className="font-bold">{filteredQuestion.difficulty}</span>
         </div>
 
-        <button className="border px-5 py-2 rounded-lg font-bold transition-all hover:bg-yellow-500 hover:text-gray-900" onClick={() => setActiveQuiz(false)}>
+        <button 
+          className="border px-5 py-2 rounded-lg font-bold transition-all hover:bg-yellow-500 hover:text-gray-900" 
+          onClick={onReset}>
           Reiniciar
         </button>
 
@@ -47,14 +79,20 @@ const Question = ({ filteredQuestion, setIndexQuestion, indexQuestion, questions
         {/* Las respuestas del usuario van aqui */}
         <div className="grid grid-cols-2 gap-5">
           {/* Mapeamos un arreglo de respuesta correcta e incorrectas */}
-          
-          {answersRandom.map((answerText, index) => (
+          {answersRandom.map((answer, index) => (
             <button 
-              className="border p-5 rounded-lg flex justify-center items-center hoover:scale-105"
-              key={answerText}
+              className={`border p-5 rounded-lg flex justify-center items-center hover:bg-lime-300 hover:scale-105 ${selectAnswerIndex !== null && 
+                index === selectAnswerIndex
+                  ? answer === filteredQuestion.correct_answer 
+                    ? 'bg-green-500' 
+                    : 'bg-red-500'
+                  : ''}`} 
+                  key={answer} 
+                  onClick={() => checkAnswer(answer, index)}
+                  disabled={answered && selectAnswerIndex !== index} //Desactiva la posibilidad de que el usuario vuelva a elegir una respuesta. 
               >
               <p className="font-medium text-center text-sm">
-                {answerText}
+                {answer}
               </p>
             </button>
           ))
@@ -62,10 +100,26 @@ const Question = ({ filteredQuestion, setIndexQuestion, indexQuestion, questions
         </div>
 
         {/* Aqui va el condicional para mostrar el boton de siguiente pregunta o el de finalizar. */}
-        <button className="border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 hover:bg-yellow-600 hover:text-black font-medium" onClick={onNextQuestion}>
-          Finaliar o siguiente pregunta.
-        </button>
+        {indexQuestion + 1 === questionsFiltered.length ? (
+						<button
+							className='border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 hover:bg-yellow-600 hover:text-black font-medium'
+							onClick={() => {
+								setAnswered(false);
+								setActiveResults(true);
+							}}
+						>
+							Finalizar
+						</button>
+					) : (
+						<button
+							className='border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 hover:bg-yellow-600 hover:text-black font-medium'
+							onClick={onNextQuestion}
+						>
+							Siguiente Pregunta
+						</button>
+					)}
       </div>
+    ) }
     </>
   )
 }
