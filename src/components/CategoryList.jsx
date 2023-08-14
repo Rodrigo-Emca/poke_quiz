@@ -18,20 +18,6 @@ const CategoryList = () => {
         <div className='flex flex-wrap flex-row justify-center gap-4 mt-10'>
 
             {/* Category Link Kanto */}
-{/*             <Link 
-                to={`/category/${categories.kanto}`} 
-                className='flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105'>
-                <div className='p-5 flex justify-center items-center'>
-                    <img 
-                    src={imgKanto} 
-                    alt={`Categoria ${categories.kanto}`} 
-                    className='w-screen'/>
-                </div>
-
-                <h1 className="text-center text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5">
-                    {categories.kanto}
-                </h1>
-            </Link> */} {/* Todo el link fue construido primero, y luego se lo refactoriza en componente CategoryCard. */}
             <CategoryCard 
                 category={categories.kanto} /* props */
                 src={imgKanto} 
