@@ -18,7 +18,7 @@ export const CategoryPage = () => {
     //console.log(questions)
 
     //Revisar por qué en Vercel no renderiza la img.
-    //const imageQuiz = imgs.filter(img => img === `/src/assets/${category.toLowerCase()}.png`)
+    const imageQuiz = imgs.filter(img => img === `/src/assets/${category.toLowerCase()}.png`)
 
     // useState. Tomo de data.js, buscando todos los questions que coincidan con la categoría dada. 
     const [questionsFiltered, setQuestionsFiltered] = useState(
@@ -53,7 +53,7 @@ export const CategoryPage = () => {
                         </h1>
                         
                         <div className="flex justify-center items-center">
-                            //<img src={imageQuiz} alt={category} className='w-72' />
+                            <img src={imageQuiz} alt={category} className='w-72' />
                         </div>
                     </div>
 
