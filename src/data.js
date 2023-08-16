@@ -7,6 +7,20 @@ import Kalos from './assets/kalos.png';
 import Alola from './assets/alola.png';
 import Galar from './assets/galar.png';
 
+import loadingArticuno from './assets/loadingArticuno.gif'
+import loadingBulbasaur from './assets/loadingBulbasaur.gif'
+import loadingCharizard from './assets/loadingCharizard.gif'
+import loadingChicorita from './assets/loadingChicorita.gif'
+import loadingDarkrai from './assets/loadingDarkrai.gif'
+import loadingDialga from './assets/loadingDialga.gif'
+import loadingGengar from './assets/loadingGengar.gif'
+import loadingGrowlite from './assets/loadingGrowlite.gif'
+import loadingGiratinaShiny from './assets/loadingGiratinaShiny.gif'
+import loadingLeafeon from './assets/loadingLeafeon.gif'
+import loadingMew from './assets/loadingMew.gif'
+import loadingPikachu from './assets/loadingPikachu.gif'
+import loadingPikachu2 from './assets/loadingPikachu2.gif'
+
 export const imgs = [
 	Kanto,
 	Johto,
@@ -18,27 +32,21 @@ export const imgs = [
 	Galar,
 ];
 
-export const categories = {
-	teselia: 'Teselia', 
-	kalos: 'Kalos',
-	johto: 'Johto',
-	kanto: 'Kanto',
-	hoenn: 'Hoenn',
-	alola: 'Alola',
-	sinnoh: 'Sinnoh',
-	galar: 'Galar',
-};
-
-const {
-	teselia,
-	alola,
-	kalos,
-	johto,
-	kanto,
-	hoenn,
-	sinnoh,
-	galar,
-} = categories;
+export const gifImages = [
+    loadingArticuno,
+    loadingBulbasaur,
+    loadingCharizard,
+    loadingChicorita,
+    loadingDarkrai,
+    loadingDialga,
+    loadingGengar,
+    loadingGrowlite,
+    loadingGiratinaShiny,
+    loadingLeafeon,
+    loadingMew,
+    loadingPikachu,
+    loadingPikachu2
+];
 
 export const questions = [
 	/* Preguntas de KANTO */
