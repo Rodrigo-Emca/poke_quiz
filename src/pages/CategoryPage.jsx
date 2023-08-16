@@ -1,8 +1,7 @@
 import React, { useState , useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Question from '../components/Question.jsx';
-import { questions , imgs } from '../data.js'; /* Importo el array de preguntas de data.js */
-import loadingPikachu from '../assets/loadingPikachu.gif'
+import { questions , imgs , gifImages} from '../data.js'; /* Importo el array de preguntas de data.js */
 
 //Función para barajar las preguntas de cada categoria y también reducirla al numero deseado.
 const shuffleArray = (array) => {
@@ -38,6 +37,9 @@ export const CategoryPage = () => {
     }, []);
         //console.log(questionsFiltered.length)
 
+    const randomGifIndex = Math.floor(Math.random() * gifImages.length);
+    const randomGif = gifImages[randomGifIndex];
+
     return (
         <div className='container flex flex-col items-center justify-center gap-10' style={{height: 'calc(100vh - 5rem)'}}>
 
@@ -55,7 +57,7 @@ export const CategoryPage = () => {
                         </h1>
                         
                         <div className="flex justify-center items-center">
-                            <img src={loadingPikachu} alt={category} className='w-72' />
+                            <img src={randomGif} alt={category} className='w-72' />
                         </div>
                     </div>
 
