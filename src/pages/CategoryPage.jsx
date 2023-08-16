@@ -17,7 +17,8 @@ export const CategoryPage = () => {
     //console.log(category)
     //console.log(questions)
 
-    const imageQuiz = imgs.filter(img => img === `/src/assets/${category.toLowerCase()}.png`)
+    //Revisar por qué en Vercel no renderiza la img.
+    //const imageQuiz = imgs.filter(img => img === `/src/assets/${category.toLowerCase()}.png`)
 
     // useState. Tomo de data.js, buscando todos los questions que coincidan con la categoría dada. 
     const [questionsFiltered, setQuestionsFiltered] = useState(
