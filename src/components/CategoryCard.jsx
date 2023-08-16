@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 const CategoryCard = ({category, src, alt, gradientColor}) => {
   return (
-    // <div>
         <Link 
             to={`/category/${category}`} 
             className={`flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r ${gradientColor} transition-all hover:scale-105`}>
@@ -18,7 +17,6 @@ const CategoryCard = ({category, src, alt, gradientColor}) => {
                 {category}
             </h1>
         </Link>
-    // </div>
   )
 }
 
