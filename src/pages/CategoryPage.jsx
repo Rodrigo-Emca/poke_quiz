@@ -53,7 +53,7 @@ export const CategoryPage = () => {
                         </h1>
                         
                         <div className="flex justify-center items-center">
-                            <img src={imageQuiz} alt={category} className='w-72' />
+                            //<img src={imageQuiz} alt={category} className='w-72' />
                         </div>
                     </div>
 
