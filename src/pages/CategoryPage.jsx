@@ -2,6 +2,7 @@ import React, { useState , useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Question from '../components/Question.jsx';
 import { questions , imgs } from '../data.js'; /* Importo el array de preguntas de data.js */
+import loadingPikachu from '../assets/loadingPikachu.gif'
 
 //Función para barajar las preguntas de cada categoria y también reducirla al numero deseado.
 const shuffleArray = (array) => {
@@ -17,8 +18,9 @@ export const CategoryPage = () => {
     //console.log(category)
     //console.log(questions)
 
-    //Revisar por qué en Vercel no renderiza la img.
-    const imageQuiz = imgs.filter(img => img === `/src/assets/${category.toLowerCase()}.png`)
+    //const imageQuiz = imgs.filter(img => img === `/src/assets/${category.toLowerCase()}.png`)
+    
+    //console.log(imageQuiz)
 
     // useState. Tomo de data.js, buscando todos los questions que coincidan con la categoría dada. 
     const [questionsFiltered, setQuestionsFiltered] = useState(
@@ -53,7 +55,7 @@ export const CategoryPage = () => {
                         </h1>
                         
                         <div className="flex justify-center items-center">
-                            <img src={imageQuiz[0]} alt={category} className='w-72' />
+                            <img src={loadingPikachu} alt={category} className='w-72' />
                         </div>
                     </div>
 
